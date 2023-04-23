@@ -1,0 +1,480 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+}
+
+
+/* navbar */
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.7rem 7%;
+    background-color:#FFFFFF;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 1px 1px 1px steelblue;     
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin: 1.2em;
+}
+
+.nav-menu li a {
+    color: steelblue;
+    font-size: 1.1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.nav-menu li a:hover {
+    border-bottom: 2px solid steelblue;
+    border-radius: 2px;
+}
+
+.logo img {
+   margin-left: -5%;
+   height: 4em;
+}
+
+.hamburger {
+display: none;
+}  
+
+.bar {
+display: block;
+width: 35px;
+height: 5px;
+margin: 5px auto;
+border: 1px solid  white;
+border-radius: 2PX;
+-webkit-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+background-color:  steelblue;
+}
+
+
+@media only screen and (max-width: 768px) {
+.nav-menu {
+position: fixed;
+left: -100%;
+top: 5rem;
+flex-direction: column;
+background-color: transparent;
+width: 100%;
+border-radius: 10px;
+text-align: right;
+transition: 0.3s;  
+}
+
+.nav-menu.active {
+left: 0;
+}
+
+
+.nav-menu li {
+    display: block;
+    margin: 1.2em;
+}
+
+.nav-menu li a:hover {
+    border-bottom: none;
+    border-radius: 2px;
+}
+
+.hamburger {
+display: block;
+cursor: pointer;
+}
+
+.hamburger.active .bar:nth-child(2) {
+opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+-webkit-transform: translateY(8px) rotate(45deg);
+transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+-webkit-transform: translateY(-8px) rotate(-45deg);
+transform: translateY(-8px) rotate(-45deg);
+}
+}
+/* ends here */
+
+/* home section */
+.home {
+    background-image: url(pic/image8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    margin-top: 7.3em; 
+}
+/* ends here */
+
+/* what we do section */
+.what_we_do {
+margin-top: 10px;
+width: 100%;
+background-color: #fff;
+color: #000000;
+text-align: center;
+}
+
+.title h1 {
+color: steelblue;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 1.8em;
+text-transform: capitalize;
+margin-top: 2em;
+}
+
+.title p {
+    color: steelblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.3em;
+    text-transform: capitalize;  
+}
+
+.words h2 {
+margin-top: 20px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 1.7em;
+text-transform: capitalize;
+}
+
+.hr1 {   
+background: linear-gradient(to left,  pink,  steelblue);
+border: 2px solid white;
+padding: 3px;
+width: 85%;
+margin: 0 auto;
+}
+
+.words p {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 1.2em;
+line-height: 25px;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+.words a {
+color: steelblue;
+text-decoration: none;
+}
+/* ends here */
+
+/* contact section */
+.contact h2 {
+color: #000000;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 1.7em;
+text-transform: capitalize;
+text-align: center;
+margin-top: 25px;
+}
+
+.container {
+background-color: rgb(228, 220, 220);
+width: 80%;
+height: 650px;
+margin: 35px auto;
+border-radius: 2px;
+}
+
+.design h3 {
+color: steelblue;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 1.6em;
+text-align: center;
+text-transform: capitalize;
+}
+
+.hr2 {
+border: 1px solid steelblue;
+width: 200px;
+margin: 15px auto;
+}
+
+.details {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.details .links  {
+background-color:  steelblue;
+padding: 12px;
+width: 55vw;
+margin: 8px;
+list-style-type: none;
+border-radius: 5px;
+}
+
+span {
+color: #FFFFFF;
+font-size: 1em;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.details .links a {
+color: #FFFFFF;
+font-size: 1.1em;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-decoration: none;
+padding: 4px;
+}
+
+
+.contain h3 {
+color: #000000;
+font-size: 1.6em;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+margin-top: 15px;
+text-transform: capitalize;
+}
+
+form {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 9px;
+}
+
+.input-field .field {
+font-size: 0.9em;
+border: 1px solid grey;
+border-radius: 5px;
+width: 55vw;
+padding: 12px;
+margin: 8px;
+outline: none;
+}
+
+.button .btn {
+color: #FFFFFF;
+font-size: 1.2em;
+background-color: steelblue;
+border: 1px solid grey;
+border-radius: 5px;
+width: 55vw;
+padding: 12px;
+margin: 8px;
+outline: none;  
+}
+
+.hr3 {
+border: 1px solid steelblue;
+background-color: steelblue;
+}
+/* ends here */
+
+/* feedback section */
+.feedback {
+text-align: center; 
+background-color: #fff;
+width: 100%;
+}
+
+.box-container{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+gap: 1.5em;
+margin-top: 5em;
+}
+
+.box {
+background-color: grey;
+height: 270px;
+width: 80%;
+border-radius: 3px; 
+margin: 0 auto;
+}
+
+.box h4 {
+color: #FFFFFF;
+font-size: 1.3em;
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 15px;
+}
+
+.box p {
+color: #FFFFFF;
+font-size: 1em;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+line-height: 19px;
+margin-top: 10px;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+.more {
+margin-top: 5em;
+}
+
+.more .btn-1  {
+background-color: steelblue;
+padding: 10px 30% 10px 30%;
+border: 1px solid rgb(214, 200, 200);
+border-radius: 3px;   
+}
+
+.more a {
+color: #FFFFFF;
+font-size: 1em;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+text-transform: capitalize;
+text-decoration: none;
+}
+
+/* footer */
+footer {
+background-color: steelblue;
+width: 100%;
+height: 200px;
+margin-top: 5em;
+}
+
+.social,.social-media {
+display: flex;
+justify-content: center;
+}
+
+.social a {
+height: 5rem;
+width: 5rem;
+line-height: 5rem;
+font-size: 2rem;
+color: steelblue;
+text-align: center;
+border-radius: 4px;   
+}
+
+.social-media a {
+height: 5rem;
+width: 5rem;
+line-height: 5rem;
+font-size: 2rem;
+color: white;
+text-align: center;
+text-decoration: none;
+border-radius: 4px;   
+}
+
+footer p  {
+color: #FFFFFF;
+text-align: center;
+padding-top: 4em; 
+}
+
+@media only screen and (max-width: 480px) {
+.container {
+background-color: rgb(228, 220, 220);
+width: 80%;
+height: 681px;
+margin: 35px auto;
+border-radius: 2px;
+}
+}
+
+
+@media only screen and (max-width: 400px) {
+.box {
+background-color: grey;
+height: 300px;
+width: 60%;
+border-radius: 3px;
+text-align: center;
+}
+}
+
+@media only screen and (max-width: 320px) {
+.box {
+background-color: grey;
+height: 325px;
+width: 60%;
+border-radius: 3px;
+text-align: center;
+margin: 0 auto;
+}
+
+.container {
+background-color: rgb(228, 220, 220);
+width: 80%;
+height: 700px;
+margin: 35px auto;
+border-radius: 2px;
+}
+
+.more .btn-1  {
+background-color: steelblue;
+padding: 10px 25% 10px 25%;
+border: 1px solid rgb(214, 200, 200);
+border-radius: 3px;  
+}
+}
+/* ends here */
+
+  /* gallery section */
+.gallery h1 {
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    text-align: center; 
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 2em;
+}
+
+.gallery p {
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3.5em;  
+}
+
+.gallery-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    border-radius: 4px;
+    width: 300px;
+    height: 350px;
+	margin: 20px;
+}
+
+.gallery-image img {
+    width: 100%;
+    height: 350px;
+    border-radius: 4px;
+}
+
+.gallery-image img:hover {
+    width: 105%;
+    height: 355px;
+}
+
+/* ends here */
